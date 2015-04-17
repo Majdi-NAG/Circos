@@ -13,7 +13,7 @@ ls
 
 `which env`
 >/usr/bin/env
-PS: Edit Shebang in circos binary at `<extracted circos path>/bin/circos` to match correct PATH for `env`. In my case, it is `#!/usr/bin/env perl` and not default `#!/bin/env perl`
+PS: Edit Shebang in `circos` and `gddiag` binary at `<extracted circos path>/bin/` to match correct PATH for `env`. In my case, it is `#!/usr/bin/env perl` and not default `#!/bin/env perl`
 
 ### Get dependencies:
 
@@ -113,8 +113,21 @@ cd <extracted circos path>/bin/circos/bin
 
 ### Test circos:
 
+* Test `circos` command:
+
 ```
 cd <extracted circos path>/bin/circos/example
 ./run
 ```
+
+* Test GD installation to make sure your Perl distribution can create graphics and handle True Type fonts.
+
+```
+cd <extracted circos path>/
+bin/gddiag
+```
+>Look at the created gddiag.png in circos../   
+>It should look like: http://www.circos.ca/tutorials/lessons/configuration/png_output/images  
+
+END
 
