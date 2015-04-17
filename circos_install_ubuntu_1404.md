@@ -121,7 +121,7 @@ cd <extracted circos path>/bin/circos/example
 ./run
 ```
 
-##### Test GD installation to make sure your Perl distribution can create graphics and handle True Type fonts.
+Test GD installation to make sure your Perl distribution can create graphics and handle True Type fonts.
 
 ```
 cd <extracted circos path>/
